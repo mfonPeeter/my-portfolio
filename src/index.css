@@ -6,4 +6,12 @@
   html {
     font-family: "Source Sans Pro", sans-serif;
   }
+
+  h2 {
+    @apply mb-4 text-4xl font-bold uppercase bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-orange-800 md:text-5xl;
+  }
+
+  h3 {
+    @apply mb-6 text-2xl text-gray-800 font-bold md:text-3xl;
+  }
 }

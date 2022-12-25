@@ -2,12 +2,13 @@ import { Fragment } from "react";
 import { BsLinkedin, BsTwitter, BsGithub } from "react-icons/bs";
 
 import Navigation from "./Navigation/Navigation";
+import Button from "../UI/Button";
 import mfonImg from "../../assets/mfon.webp";
 
 const HeroSection = () => {
   return (
     <Fragment>
-      <header className="relative px-4 pb-10 bg-[#fdf2e9] md:h-screen">
+      <header className="relative px-4 pb-16 md:h-screen bg-[#fdf2e9]">
         <Navigation />
         <div className="animate-heroMoveInBottom md:py-10 lg:px-10 xl:px-24">
           <div className="container mx-auto max-w-screen-lg flex flex-col-reverse items-center justify-between space-y-reverse space-y-10 md:flex-row md:space-x-4 md:space-y-0 lg:ml-8 xl:space-x-14 xl:ml-20">
@@ -16,16 +17,11 @@ const HeroSection = () => {
                 Hi, I'm Mfonobong Peter
               </h1>
               <p className="mb-8 max-w-xl flex text-lg text-center mx-auto text-gray-800 transition-all animate-moveInRight sm:text-xl md:text-lg lg:text-xl lg:mb-10">
-                A focused Frontend Web Developer building the frontend of
+                A focused Frontend Web Developer, building the frontend of
                 websites that leads to the success of the overall product
               </p>
               <div className="animate-btnMoveInBottom">
-                <a
-                  href="projects"
-                  className="relative inline-block px-12 py-3 bg-gradient-to-r from-orange-400 to-orange-600 text-xl text-white font-bold uppercase rounded-full shadow-lg outline-none transition-all duration-200 after:inline-block after:w-full after:h-full after:absolute after:inset-0 after:bg-gradient-to-r after:from-orange-500 after:to-orange-700 after:rounded-full after:-z-10 after:duration-500 hover:from-orange-500 hover:to-orange-700 hover:-translate-y-[3px] hover:shadow-2xl hover:after:scale-x-[1.4] hover:after:scale-y-[1.6] hover:after:opacity-0 focus:-translate-y-[1px] focus:animate-pulsate lg:px-16 lg:py-4"
-                >
-                  Projects
-                </a>
+                <Button link="#projects" text="Projects" />
               </div>
             </div>
 
@@ -40,19 +36,19 @@ const HeroSection = () => {
 
       <div className="hidden absolute top-1/2 flex-col space-y-4 -translate-y-1/2 px-2 py-4 bg-white rounded-full shadow-2xl sm:flex md:hidden lg:flex">
         <a
-          href="linkedin"
+          href="https://www.linkedin.com/in/mfonpeeter/"
           className="p-3 inline-block rounded outline-orange-700 transition-colors hover:bg-orange-100"
         >
           <BsLinkedin size={28} />
         </a>
         <a
-          href="twitter"
+          href="https://twitter.com/mfonPeeter"
           className="p-3 inline-block rounded outline-orange-700 transition-colors hover:bg-orange-100"
         >
           <BsTwitter size={28} />
         </a>
         <a
-          href="github"
+          href="https://github.com/mfonPeeter"
           className="p-3 inline-block rounded outline-orange-700 transition-colors hover:bg-orange-100"
         >
           <BsGithub size={28} />
