@@ -3,7 +3,7 @@ import Button from "../UI/Button";
 
 const About = () => {
   return (
-    <section className="pt-16 pb-96 lg:pt-20">
+    <section className="pt-16 pb-16 lg:pt-20">
       <div className="px-2 mb-16 text-center">
         <h2>About Me</h2>
         <p className="max-w-2xl px-4 mx-auto text-lg text-gray-800 sm:px-10 md:text-xl md:max-w-3xl md:px-0">
@@ -14,7 +14,7 @@ const About = () => {
 
       <div className="container mx-auto max-w-7xl flex flex-col space-y-16 px-4 sm:px-10 lg:flex-row lg:space-y-0 lg:space-x-16">
         <div className="w-full">
-          <h3>Get to know me!</h3>
+          <h3 className="mb-6">Get to know me!</h3>
           <div className="flex flex-col items-center space-y-4 mb-8 text-lg text-gray-800 lg:mb-10">
             <p>
               I'm a{" "}
@@ -60,7 +60,7 @@ const About = () => {
         </div>
 
         <div className="w-full">
-          <h3>My Skills</h3>
+          <h3 className="mb-6">My Skills</h3>
           <div className="flex flex-col space-y-4">
             <div className="flex space-x-4">
               <Skills text="HTML" />

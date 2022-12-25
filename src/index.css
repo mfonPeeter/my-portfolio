@@ -12,6 +12,6 @@
   }
 
   h3 {
-    @apply mb-6 text-2xl text-gray-800 font-bold md:text-3xl;
+    @apply text-2xl text-gray-800 font-bold md:text-3xl;
   }
 }
