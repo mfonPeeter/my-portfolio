@@ -9,25 +9,27 @@ const HeroSection = () => {
     <Fragment>
       <header className="relative px-4 pb-10 bg-[#fdf2e9] md:h-screen">
         <Navigation />
-        <div className="md:py-10 lg:px-10 xl:px-24">
+        <div className="animate-heroMoveInBottom md:py-10 lg:px-10 xl:px-24">
           <div className="container mx-auto max-w-screen-lg flex flex-col-reverse items-center justify-between space-y-reverse space-y-10 md:flex-row md:space-x-4 md:space-y-0 lg:ml-8 xl:space-x-14 xl:ml-20">
             <div className="w-11/12 text-center bg-orange-200 shadow-[inset_0_0_50px_50px_#fdf2e9]">
-              <h1 className="mb-3 text-3xl text-gray-800 font-bold uppercase sm:text-4xl md:text-3xl lg:text-4xl xl:text-5xl">
+              <h1 className="mb-3 text-3xl text-gray-800 font-bold uppercase transition-all animate-moveInLeft sm:text-4xl md:text-3xl lg:text-4xl xl:text-5xl">
                 Hi, I'm Mfonobong Peter
               </h1>
-              <p className="mb-8 max-w-xl flex text-lg text-center mx-auto text-gray-800 sm:text-xl md:text-lg lg:text-xl lg:mb-10">
+              <p className="mb-8 max-w-xl flex text-lg text-center mx-auto text-gray-800 transition-all animate-moveInRight sm:text-xl md:text-lg lg:text-xl lg:mb-10">
                 A focused Frontend Web Developer building the frontend of
                 websites that leads to the success of the overall product
               </p>
-              <a
-                href="projects"
-                className="inline-block px-12 py-3 bg-gradient-to-r from-orange-400 to-orange-600 text-xl text-white font-bold uppercase rounded-full outline-orange-700 transition-colors hover:from-orange-500 hover:to-orange-700 hover:outline-800 lg:px-16 lg:py-4"
-              >
-                Projects
-              </a>
+              <div className="animate-btnMoveInBottom">
+                <a
+                  href="projects"
+                  className="relative inline-block px-12 py-3 bg-gradient-to-r from-orange-400 to-orange-600 text-xl text-white font-bold uppercase rounded-full shadow-lg outline-none transition-all duration-200 after:inline-block after:w-full after:h-full after:absolute after:inset-0 after:bg-gradient-to-r after:from-orange-500 after:to-orange-700 after:rounded-full after:-z-10 after:duration-500 hover:from-orange-500 hover:to-orange-700 hover:-translate-y-[3px] hover:shadow-2xl hover:after:scale-x-[1.4] hover:after:scale-y-[1.6] hover:after:opacity-0 focus:-translate-y-[1px] focus:animate-pulsate lg:px-16 lg:py-4"
+                >
+                  Projects
+                </a>
+              </div>
             </div>
 
-            <div className="w-3/4 border-dotted border-4 border-orange-200 rounded-lg shadow-[inset_0_0_50px_50px_#fdf2e9] sm:w-3/5 sm:ml-6 md:w-1/2">
+            <div className="w-3/4 border-dotted border-4 border-orange-200 rounded-lg shadow-[inset_0_0_50px_50px_#fdf2e9] animate-imgMoveInRight sm:w-3/5 sm:ml-6 md:w-1/2">
               <div className="bg-orange-200 rounded-lg">
                 <img src={mfonImg} alt="Mfon" className="w-full" />
               </div>
