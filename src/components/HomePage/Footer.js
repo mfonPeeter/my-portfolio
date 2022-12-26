@@ -50,7 +50,7 @@ const Footer = () => {
           &copy; Copyright 2022. Made by{" "}
           <span>
             <a
-              href="#the main website link"
+              href="http://mfonpeter.netlify.app/"
               className="inlne-block font-bold underline"
             >
               Mfonobong Peter
