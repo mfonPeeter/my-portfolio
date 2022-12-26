@@ -4,7 +4,7 @@ import Button from "../UI/Button";
 const About = () => {
   return (
     <section className="pt-16 pb-16 lg:pt-20">
-      <div className="px-2 mb-16 text-center">
+      <div className="px-2 mb-12 text-center lg:mb-16">
         <h2>About Me</h2>
         <p className="max-w-2xl px-4 mx-auto text-lg text-gray-800 sm:px-10 md:text-xl md:max-w-3xl md:px-0">
           Here you will find more information about me, what I do, and my
@@ -12,7 +12,7 @@ const About = () => {
         </p>
       </div>
 
-      <div className="container mx-auto max-w-7xl flex flex-col space-y-16 px-4 sm:px-10 lg:flex-row lg:space-y-0 lg:space-x-16">
+      <div className="container mx-auto max-w-7xl flex flex-col space-y-12 px-4 sm:px-10 lg:flex-row lg:space-y-0 lg:space-x-16">
         <div className="w-full">
           <h3 className="mb-6">Get to know me!</h3>
           <div className="flex flex-col items-center space-y-4 mb-8 text-lg text-gray-800 lg:mb-10">

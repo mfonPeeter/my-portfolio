@@ -13,7 +13,7 @@ const Projects = () => {
         </p>
       </div>
 
-      <div className="container mx-auto max-w-7xl flex flex-col items-center justify-between space-y-6 px-2 mb-20 md:flex-row md:space-y-0 md:space-x-4 md:px-8 lg:px-20 xl:space-x-24 xl:px-24">
+      <div className="container mx-auto max-w-7xl flex flex-col items-center justify-between space-y-6 px-2 mb-16 md:flex-row md:space-y-0 md:space-x-4 md:px-8 lg:px-20 xl:space-x-24 xl:px-24">
         <div className="pl-10 w-11/12 sm:w-3/4 md:w-3/5 lg:w-1/2 md:pl-0">
           <img src={laonImg} alt="Laon E-commerce" className="w-full" />
         </div>
