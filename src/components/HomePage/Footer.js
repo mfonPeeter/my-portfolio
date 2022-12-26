@@ -16,18 +16,24 @@ const Footer = () => {
           <h4 className="mb-4 text-2xl font-bold uppercase">Social</h4>
           <div className="flex space-x-4">
             <a
+              rel="noreferrer"
+              target="_blank"
               href="https://www.linkedin.com/in/mfonpeeter/"
               className="inline-block transition-all hover:scale-110"
             >
               <BsLinkedin size={24} />
             </a>
             <a
+              rel="noreferrer"
+              target="_blank"
               href="https://twitter.com/mfonPeeter"
               className="inline-block transition-all hover:scale-110"
             >
               <BsTwitter size={24} />
             </a>
             <a
+              rel="noreferrer"
+              target="_blank"
               href="https://github.com/mfonPeeter"
               className="inline-block transition-all hover:scale-110"
             >

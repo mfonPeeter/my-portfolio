@@ -3,7 +3,7 @@ import Button from "../UI/Button";
 
 const About = () => {
   return (
-    <section className="pt-16 pb-16 lg:pt-20">
+    <section id="about" className="pt-16 pb-16 lg:pt-20">
       <div className="px-2 mb-12 text-center lg:mb-16">
         <h2>About Me</h2>
         <p className="max-w-2xl px-4 mx-auto text-lg text-gray-800 sm:px-10 md:text-xl md:max-w-3xl md:px-0">

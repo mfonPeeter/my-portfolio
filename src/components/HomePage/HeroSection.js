@@ -36,18 +36,24 @@ const HeroSection = () => {
 
       <div className="hidden absolute top-1/2 flex-col space-y-4 -translate-y-1/2 px-2 py-4 bg-white rounded-full shadow-2xl sm:flex md:hidden lg:flex">
         <a
+          rel="noreferrer"
+          target="_blank"
           href="https://www.linkedin.com/in/mfonpeeter/"
           className="p-3 inline-block rounded outline-orange-700 transition-colors hover:bg-orange-100"
         >
           <BsLinkedin size={28} />
         </a>
         <a
+          rel="noreferrer"
+          target="_blank"
           href="https://twitter.com/mfonPeeter"
           className="p-3 inline-block rounded outline-orange-700 transition-colors hover:bg-orange-100"
         >
           <BsTwitter size={28} />
         </a>
         <a
+          rel="noreferrer"
+          target="_blank"
           href="https://github.com/mfonPeeter"
           className="p-3 inline-block rounded outline-orange-700 transition-colors hover:bg-orange-100"
         >

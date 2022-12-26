@@ -5,6 +5,7 @@
 @layer base {
   html {
     font-family: "Source Sans Pro", sans-serif;
+    @apply scroll-smooth;
   }
 
   h2 {

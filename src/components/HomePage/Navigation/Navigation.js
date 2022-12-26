@@ -8,12 +8,12 @@ const Navigation = () => {
   return (
     <nav className="pt-3 mb-10">
       <div className="flex items-center justify-between py-1 pl-6 pr-4 w-11/12 bg-white rounded-full mx-auto shadow-xl">
-        <a href="home" className="outline-orange-700">
+        <a href="https://mfonpeter.netlify.app/" className="outline-orange-700">
           <img src={logo} alt="My Logo" className="w-14 h-14" />
         </a>
 
         <ul className="hidden items-center space-x-12 font-semibold text-lg text-gray-800 md:flex">
-          <NavigationList link="#home" text="Home" />
+          <NavigationList link="https://mfonpeter.netlify.app/" text="Home" />
           <NavigationList link="#about" text="About" />
           <NavigationList link="#projects" text="Projects" />
           <a
