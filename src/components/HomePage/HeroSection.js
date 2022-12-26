@@ -17,7 +17,7 @@ const HeroSection = () => {
                 Hi, I'm Mfonobong Peter
               </h1>
               <p className="mb-8 max-w-xl flex text-lg text-center mx-auto text-gray-800 transition-all animate-moveInRight sm:text-xl md:text-lg lg:text-xl lg:mb-10">
-                A focused Frontend Web Developer, building the frontend of
+                A Frontend Web Developer focused on building the frontend of
                 websites that leads to the success of the overall product
               </p>
               <div className="animate-btnMoveInBottom">
