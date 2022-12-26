@@ -1,4 +1,4 @@
-import { BsLinkedin, BsTwitter, BsGithub } from "react-icons/bs";
+import { BsLinkedin, BsTwitter, BsGithub } from 'react-icons/bs';
 
 const Footer = () => {
   return (
@@ -7,8 +7,8 @@ const Footer = () => {
         <div>
           <h4 className="mb-4 text-2xl font-bold uppercase">Mfonobong Peter</h4>
           <p className="max-w-lg">
-            A focused Frontend Web Developer, building the frontend of websites
-            that leads to the success of the overall product
+            A Frontend Web Developer focused on building the frontend of
+            websites that leads to the success of the overall product
           </p>
         </div>
 
@@ -47,7 +47,7 @@ const Footer = () => {
 
       <div className="mt-8 text-center text-sm">
         <p>
-          &copy; Copyright 2022. Made by{" "}
+          &copy; Copyright 2022. Made by{' '}
           <span>
             <a
               href="http://mfonpeter.netlify.app/"
