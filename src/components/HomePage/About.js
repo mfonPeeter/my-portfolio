@@ -1,5 +1,5 @@
-import Skills from "./Skills";
-import Button from "../UI/Button";
+import Skills from './Skills';
+import Button from '../UI/Button';
 
 const About = () => {
   return (
@@ -8,7 +8,7 @@ const About = () => {
         <h2>About Me</h2>
         <p className="max-w-2xl px-4 mx-auto text-lg text-gray-800 sm:px-10 md:text-xl md:max-w-3xl md:px-0">
           Here you will find more information about me, what I do, and my
-          current skills mostly in terms of programming and technology
+          current skills in terms of programming and technology.
         </p>
       </div>
 
@@ -17,42 +17,46 @@ const About = () => {
           <h3 className="mb-6">Get to know me!</h3>
           <div className="flex flex-col items-center space-y-4 mb-8 text-lg text-gray-800 lg:mb-10">
             <p>
-              I'm a{" "}
+              I'm a{' '}
               <span className="font-semibold">Frontend Web Developer</span> with
               a passion for building up beautiful and responsive websites. I
               have worked on a few projects that demonstrates my ability to make
-              use of the concepts I've learned. You can check them out in the{" "}
+              use of the concepts I've learned. You can check them out in the{' '}
               <span className="font-semibold">Projects</span> section.
             </p>
             <p>
               I enjoy sharing and interacting with people in the Web Dev world.
               I believe that this helps me to grow and learn in this field. You
-              can connect with me on{" "}
+              can connect with me on{' '}
               <span>
                 <a
+                  rel="noreferrer"
+                  target="_blank"
                   href="https://www.linkedin.com/in/mfonpeeter/"
-                  className="inline-block bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-orange-600 font-bold underline"
+                  className="inline-block bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-orange-600 font-bold"
                 >
                   LinkedIn
                 </a>
-              </span>{" "}
-              and{" "}
+              </span>{' '}
+              and{' '}
               <span>
                 <a
+                  rel="noreferrer"
+                  target="_blank"
                   href="https://twitter.com/mfonPeeter"
-                  className="inline-block bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-orange-600 font-bold underline"
+                  className="inline-block bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-orange-600 font-bold"
                 >
                   Twitter
                 </a>
-              </span>{" "}
+              </span>{' '}
               where I share my experiences and thoughts on various topics
               related to Web Development.
             </p>
             <p>
-              I'm open to <span className="font-semibold">Job</span>{" "}
+              I'm open to <span className="font-semibold">Job</span>{' '}
               opportunities where I can learn, share ideas and work with
               like-minded peole. If you have any good opportunities that matches
-              my skills and experience, please don't hesitate to {""}
+              my skills and experience, please don't hesitate to {''}
               <span className="font-semibold">contact</span> me.
             </p>
           </div>

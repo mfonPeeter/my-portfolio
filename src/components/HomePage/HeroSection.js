@@ -8,7 +8,7 @@ import mfonImg from '../../assets/mfon.webp';
 const HeroSection = () => {
   return (
     <Fragment>
-      <header className="relative px-4 pb-16 md:h-screen bg-[#fdf2e9]">
+      <header className="relative px-4 pb-16 bg-[#fdf2e9]">
         <Navigation />
         <div className="animate-heroMoveInBottom md:py-10 lg:px-10 xl:px-24">
           <div className="container mx-auto max-w-screen-lg flex flex-col-reverse items-center justify-between space-y-reverse space-y-10 md:flex-row md:space-x-4 md:space-y-0 lg:ml-8 xl:space-x-14 xl:ml-20">
