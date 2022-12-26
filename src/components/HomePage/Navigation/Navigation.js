@@ -9,6 +9,10 @@ import logo from '../../../assets/logo.png';
 const Navigation = () => {
   const [showModal, setShowModal] = useState(false);
 
+  const openModal = () => {
+    setShowModal(prevState => !prevState);
+  };
+
   return (
     <Fragment>
       <nav className="relative z-20 pt-3 mb-10">
@@ -33,10 +37,7 @@ const Navigation = () => {
             </a>
           </ul>
 
-          <div
-            onClick={() => setShowModal(prevState => !prevState)}
-            className="pr-4 cursor-pointer md:hidden"
-          >
+          <div onClick={openModal} className="pr-4 cursor-pointer md:hidden">
             <RxHamburgerMenu size={24} />
           </div>
         </div>
@@ -45,7 +46,7 @@ const Navigation = () => {
       {/* Mobile Navigation */}
       {showModal && (
         <div
-          onClick={() => setShowModal(prevState => !prevState)}
+          onClick={openModal}
           className="fixed top-0 left-0 z-10 h-screen w-full md:hidden"
         />
       )}
@@ -65,9 +66,18 @@ const Navigation = () => {
               <NavigationList
                 link="https://mfonpeter.netlify.app/"
                 text="Home"
+                openModal={openModal}
               />
-              <NavigationList link="#about" text="About" />
-              <NavigationList link="#projects" text="Projects" />
+              <NavigationList
+                link="#about"
+                text="About"
+                openModal={openModal}
+              />
+              <NavigationList
+                link="#projects"
+                text="Projects"
+                openModal={openModal}
+              />
             </ul>
             <a
               href="mailto:godimfon@gmail.com"

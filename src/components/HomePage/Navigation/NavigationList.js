@@ -1,6 +1,7 @@
-const NavigationList = ({ link, text }) => {
+const NavigationList = ({ link, text, openModal }) => {
   return (
     <a
+      onClick={openModal}
       href={link}
       className="transition-colors hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-orange-400 to-orange-700 outline-orange-700"
     >
