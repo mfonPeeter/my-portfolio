@@ -1,9 +1,9 @@
-import { Fragment } from "react";
-import { BsLinkedin, BsTwitter, BsGithub } from "react-icons/bs";
+import { Fragment } from 'react';
+import { BsLinkedin, BsTwitter, BsGithub } from 'react-icons/bs';
 
-import Navigation from "./Navigation/Navigation";
-import Button from "../UI/Button";
-import mfonImg from "../../assets/mfon.webp";
+import Navigation from './Navigation/Navigation';
+import Button from '../UI/Button';
+import mfonImg from '../../assets/mfon.webp';
 
 const HeroSection = () => {
   return (
