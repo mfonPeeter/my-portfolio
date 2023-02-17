@@ -10,8 +10,8 @@ const HeroSection = () => {
     <Fragment>
       <header className="relative px-4 pb-16 bg-[#fdf2e9]">
         <Navigation />
-        <div className="animate-heroMoveInBottom md:py-10 lg:px-10 xl:px-24">
-          <div className="container mx-auto max-w-screen-lg flex flex-col-reverse items-center justify-between space-y-reverse space-y-10 md:flex-row md:space-x-4 md:space-y-0 lg:ml-8 xl:space-x-14 xl:ml-20">
+        <div className="container mx-auto animate-heroMoveInBottom md:py-10 lg:px-10 xl:px-24">
+          <div className="flex flex-col-reverse items-center justify-between space-y-reverse space-y-10 md:flex-row md:space-x-4 md:space-y-0 lg:ml-8 xl:space-x-14 xl:ml-20">
             <div className="w-11/12 text-center bg-orange-200 shadow-[inset_0_0_50px_50px_#fdf2e9]">
               <h1 className="mb-3 text-3xl text-gray-800 font-bold uppercase transition-all animate-moveInLeft sm:text-4xl md:text-3xl lg:text-4xl xl:text-5xl">
                 Hi, I'm Mfonobong Peter
