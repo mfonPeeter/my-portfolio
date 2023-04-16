@@ -70,9 +70,10 @@ const About = () => {
               <Skills text="HTML" />
               <Skills text="CSS" />
               <Skills text="SASS" />
+              <Skills text="JavaScript" />
             </div>
             <div className="flex space-x-4">
-              <Skills text="JavaScript" />
+              <Skills text="TypeScript" />
               <Skills text="React" />
               <Skills text="Git" />
               <Skills text="GitHub" />

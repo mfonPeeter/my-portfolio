@@ -27,6 +27,7 @@ const Navigation = () => {
           <ul className="hidden items-center space-x-12 font-semibold text-lg text-gray-800 md:flex">
             <NavigationList link="https://mfonpeter.netlify.app/" text="Home" />
             <NavigationList link="#about" text="About" />
+            <NavigationList link="#volunteer" text="Volunteer" />
             <NavigationList link="#projects" text="Projects" />
             <a
               href="mailto:godimfon@gmail.com"
@@ -71,6 +72,11 @@ const Navigation = () => {
               <NavigationList
                 link="#about"
                 text="About"
+                openModal={openModal}
+              />
+              <NavigationList
+                link="#volunteer"
+                text="Volunteer"
                 openModal={openModal}
               />
               <NavigationList
