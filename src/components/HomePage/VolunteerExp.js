@@ -9,7 +9,7 @@ const VolunteerExp = () => {
         </p>
       </div>
 
-      <div className="container mx-auto max-w-7xl px-4 flex justify-around space-x-6 text-gray-800 sm:px-10 lg:space-x-0">
+      <div className="container mx-auto max-w-7xl px-4 flex justify-around text-gray-800 sm:px-10 md:space-x-6 lg:space-x-0">
         <div className="hidden text-lg font-semibold md:block">
           <p>March 2023 - April 2023</p>
           <p>Uyo, Nigeria</p>
