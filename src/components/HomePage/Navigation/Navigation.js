@@ -7,7 +7,21 @@ import NavigationList from './NavigationList';
 import logo from '../../../assets/logo.png';
 
 const Navigation = () => {
+  const [stickyNav, setStickyNav] = useState(false);
   const [showModal, setShowModal] = useState(false);
+
+  const stickyNavHandler = () => {
+    if (
+      (window.innerWidth <= 768 && window.scrollY >= 800) ||
+      (window.innerWidth >= 768 && window.scrollY >= 610)
+    ) {
+      setStickyNav(true);
+    } else {
+      setStickyNav(false);
+    }
+  };
+
+  window.addEventListener('scroll', stickyNavHandler);
 
   const openModal = () => {
     setShowModal(prevState => !prevState);
@@ -16,7 +30,11 @@ const Navigation = () => {
   return (
     <Fragment>
       <nav className="relative z-20 pt-3 mb-10">
-        <div className="flex items-center justify-between py-1 pl-6 pr-4 w-11/12 bg-white rounded-full mx-auto shadow-xl">
+        <div
+          className={`flex items-center justify-between py-1 pl-6 pr-4 w-11/12 bg-white rounded-full mx-auto shadow-xl ${
+            stickyNav && 'fixed left-1/2 -translate-x-1/2'
+          }`}
+        >
           <a
             href="https://mfonpeter.netlify.app/"
             className="outline-orange-700"
