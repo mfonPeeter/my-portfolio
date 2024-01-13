@@ -18,7 +18,7 @@ const About = () => {
           <div className="flex flex-col items-center space-y-4 mb-8 text-lg text-gray-800 lg:mb-10">
             <p>
               I'm a{' '}
-              <span className="font-semibold">Frontend Web Developer</span> with
+              <span className="font-semibold">Software Engineer</span> with
               a passion for building up beautiful and responsive websites. I
               have worked on a few projects that demonstrates my ability to make
               use of the concepts I've learned. You can check them out in the{' '}
