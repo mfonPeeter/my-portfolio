@@ -79,6 +79,11 @@ const About = () => {
               <Skills text="GitHub" />
             </div>
             <div className="flex space-x-4">
+              <Skills text="Python" />
+              <Skills text="Django" />
+              <Skills text="Flask" />
+            </div>
+            <div className="flex space-x-4">
               <Skills text="Tailwind CSS" />
               <Skills text="Responsive Design" />
             </div>
