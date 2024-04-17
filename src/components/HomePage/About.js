@@ -17,12 +17,11 @@ const About = () => {
           <h3 className="mb-6">Get to know me!</h3>
           <div className="flex flex-col items-center space-y-4 mb-8 text-lg text-gray-800 lg:mb-10">
             <p>
-              I'm a{' '}
-              <span className="font-semibold">Software Engineer</span> with
-              a passion for building up beautiful and responsive websites. I
-              have worked on a few projects that demonstrates my ability to make
-              use of the concepts I've learned. You can check them out in the{' '}
-              <span className="font-semibold">Projects</span> section.
+              I'm a <span className="font-semibold">Software Engineer</span>{' '}
+              with a passion for building up beautiful and responsive websites.
+              I have worked on a few projects that demonstrates my ability to
+              make use of the concepts I've learned. You can check them out in
+              the <span className="font-semibold">Projects</span> section.
             </p>
             <p>
               I enjoy sharing and interacting with people in the Web Dev world.
@@ -65,28 +64,25 @@ const About = () => {
 
         <div className="w-full">
           <h3 className="mb-6">My Skills</h3>
-          <div className="flex flex-col space-y-4">
-            <div className="flex space-x-4">
-              <Skills text="HTML" />
-              <Skills text="CSS" />
-              <Skills text="SASS" />
-              <Skills text="JavaScript" />
-            </div>
-            <div className="flex space-x-4">
-              <Skills text="TypeScript" />
-              <Skills text="React" />
-              <Skills text="Git" />
-              <Skills text="GitHub" />
-            </div>
-            <div className="flex space-x-4">
-              <Skills text="Python" />
-              <Skills text="Django" />
-              <Skills text="Flask" />
-            </div>
-            <div className="flex space-x-4">
-              <Skills text="Tailwind CSS" />
-              <Skills text="Responsive Design" />
-            </div>
+          <div className="grid grid-cols-2 gap-2.5 mb-2.5 xs:grid-cols-3 sm:grid-cols-4">
+            <Skills text="HTML" />
+            <Skills text="CSS" />
+            <Skills text="SASS" />
+            <Skills text="JavaScript" />
+
+            <Skills text="TypeScript" />
+            <Skills text="React" />
+            <Skills text="Next.js" />
+            <Skills text="Git" />
+            <Skills text="GitHub" />
+            <Skills text="Python" />
+            <Skills text="Django" />
+            <Skills text="Flask" />
+          </div>
+          <div className="grid grid-cols-1 gap-2.5 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3">
+            <Skills text="SQL" />
+            <Skills text="Tailwind CSS" />
+            <Skills text="Responsive Design" />
           </div>
         </div>
       </div>
