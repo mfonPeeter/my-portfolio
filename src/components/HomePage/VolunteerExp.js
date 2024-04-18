@@ -11,7 +11,7 @@ const VolunteerExp = () => {
         </p>
       </div>
       <div className="container mx-auto max-w-7xl px-4">
-        <div className="flex flex-col p-6 bg-white rounded-3xl shadow-md border transform transition-all duration-300 hover:scale-[1.01] hover:shadow-lg">
+        <div className="flex flex-col p-4 bg-white rounded-2xl shadow-md border transform transition-all duration-300 hover:scale-[1.01] hover:shadow-lg xs:p-6 xs:rounded-3xl">
           <div className="flex flex-col mb-4 font-semibold">
             <div className="flex flex-col justify-between xs:flex-row">
               <span className="text-xl">George's Work</span>

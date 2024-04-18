@@ -12,7 +12,7 @@ const ProfessionalExp = () => {
       </div>
 
       <div className="container mx-auto max-w-7xl grid grid-cols-1 gap-6 px-4 md:grid-cols-2">
-        <div className="flex flex-col p-6 bg-white rounded-3xl shadow-md transform transition-all duration-300 hover:scale-[1.01] hover:shadow-lg">
+        <div className="flex flex-col p-4 bg-white rounded-2xl shadow-md transform transition-all duration-300 hover:scale-[1.01] hover:shadow-lg xs:p-6 xs:rounded-3xl">
           <div className="flex flex-col mb-4 font-semibold">
             <div className="flex flex-col justify-between xs:flex-row">
               <span className="text-xl">GOAPPiT</span>
@@ -104,7 +104,7 @@ const ProfessionalExp = () => {
           </div>
         </div>
 
-        <div className="flex flex-col p-6 bg-white rounded-3xl shadow-md transform transition-all duration-300 hover:scale-[1.01] hover:shadow-lg">
+        <div className="flex flex-col p-4 bg-white rounded-2xl shadow-md transform transition-all duration-300 hover:scale-[1.01] hover:shadow-lg xs:p-6 xs:rounded-3xl">
           <div className="flex flex-col mb-4 font-semibold">
             <div className="flex flex-col justify-between xs:flex-row">
               <span className="text-xl">GOAPPiT</span>
@@ -157,7 +157,7 @@ const ProfessionalExp = () => {
           </div>
         </div>
 
-        <div className="flex flex-col p-6 bg-white rounded-3xl shadow-md transform transition-all duration-300 hover:scale-[1.01] hover:shadow-lg">
+        <div className="flex flex-col p-4 bg-white rounded-2xl shadow-md transform transition-all duration-300 hover:scale-[1.01] hover:shadow-lg xs:p-6 xs:rounded-3xl">
           <div className="flex flex-col mb-4 font-semibold">
             <div className="flex flex-col justify-between xs:flex-row">
               <span className="text-xl">Dealdrive</span>
