@@ -1,16 +1,29 @@
 import { useState } from 'react';
 import { ButtonSmall } from '../../UI/Button';
-import { LaonDetails, BettershotzDetails } from './ProjectsDetails';
+import {
+  LaonDetails,
+  BettershotzDetails,
+  MfonAiDetails,
+  MPBlogDetails,
+} from './ProjectsDetails';
 import laonImg from '../../../assets/laon.webp';
 import bettershotzImg from '../../../assets/bettershotz.webp';
+import MfonAiImg from '../../../assets/mfon-ai.webp';
+import blogImg from '../../../assets/blog.webp';
 
 const Projects = () => {
   const [openLaonDetails, setOpenLaonDetails] = useState(false);
   const [openBettershotzDetails, setOpenBettershotzDetails] = useState(false);
+  const [openMfonAiDetails, setOpenMfonAiDetails] = useState(false);
+  const [openMPBlogDetails, setOpenMPBlogDetails] = useState(false);
 
   const openLaonDetailsHandler = () => setOpenLaonDetails(preVal => !preVal);
   const openBettershotzDetailsHandler = () =>
     setOpenBettershotzDetails(preVal => !preVal);
+  const openMfonAiDetailsHandler = () =>
+    setOpenMfonAiDetails(preVal => !preVal);
+  const openMPBlogDetailsHandler = () =>
+    setOpenMPBlogDetails(preVal => !preVal);
 
   return (
     <section id="projects" className="pt-16 pb-16 bg-[#fdf2e9]">
@@ -126,6 +139,110 @@ const Projects = () => {
           <BettershotzDetails
             openBettershotzDetails={openBettershotzDetails}
             openBettershotzDetailsHandler={openBettershotzDetailsHandler}
+          />
+        </div>
+
+        {/* PROJECT 3 */}
+        <div className="grid grid-cols-1 gap-y-8 md:grid-cols-2 md:gap-y-0 md:gap-x-14">
+          <div className="flex items-end justify-center bg-white/50 rounded-xl">
+            <img
+              src={MfonAiImg}
+              alt="Mfon.ai"
+              className="w-[90%] h-[95%] rounded-t-xl shadow-top-left-right xs:w-[70%]"
+            />
+          </div>
+          <div className="flex flex-col">
+            <h3 className="mb-2">Mfon.ai</h3>
+            <p className="mb-4 text-gray-800 md:text-lg">
+              This project originated from a take-home test given by a company
+              during my job interview process. I chose to include it in my
+              portfolio due to its impressive UI design and rich features.
+              Leveraging the Claude API, I developed an application resembling
+              ChatGPT.
+            </p>
+            <div className="grid grid-cols-2 gap-1 mb-4 text-[14.5px] font-semibold xs:flex">
+              <span className="flex items-center justify-center px-3 py-0.5 text-orange-500 bg-orange-100 rounded-full">
+                Next.js
+              </span>
+              <span className="flex items-center justify-center px-3 py-0.5 text-orange-500 bg-orange-100 rounded-full">
+                TypeScript
+              </span>
+              <span className="flex items-center justify-center px-3 py-0.5 text-orange-500 bg-orange-100 rounded-full">
+                Tailwind CSS
+              </span>
+            </div>
+            <div className="grow shrink" />
+            <div className="flex flex-col space-y-2 xs:flex-row xs:space-x-2 xs:space-y-0">
+              <ButtonSmall
+                link="https://mfon-ai.vercel.app/"
+                text="Live Link"
+              />
+              <button
+                onClick={openMfonAiDetailsHandler}
+                className="relative px-6 py-2 text-white font-bold uppercase bg-gradient-to-r from-zinc-400 to-zinc-600 rounded-full outline-none transition-all duration-200 after:inline-block after:w-full after:h-full after:absolute after:inset-0 after:bg-gradient-to-r after:from-zinc-500 after:to-zinc-700 after:rounded-full after:-z-10 after:duration-500 hover:from-zinc-500 hover:to-zinc-700 hover:-translate-y-[3px] hover:shadow-2xl hover:after:scale-x-[1.3] hover:after:scale-y-[1.3] hover:after:opacity-0 focus:-translate-y-[1px] focus:animate-pulsate"
+              >
+                More Details
+              </button>
+            </div>
+          </div>
+          <MfonAiDetails
+            openMfonAiDetails={openMfonAiDetails}
+            openMfonAiDetailsHandler={openMfonAiDetailsHandler}
+          />
+        </div>
+
+        {/* PROJECT 4 */}
+        <div className="grid grid-cols-1 gap-y-8 md:grid-cols-2 md:gap-y-0 md:gap-x-14">
+          <div className="flex flex-col">
+            <h3 className="mb-2">MP. Blog</h3>
+            <p className="mb-4 text-gray-800 md:text-lg">
+              The project aims to implement JWT authentication, with a frontend
+              blog application developed alongside. Drawing inspiration from
+              Stripe's authentication pages, I've replicated their design.{' '}
+              <span className="block font-semibold">
+                Note: Still in development, no live link yet.
+              </span>
+            </p>
+            <div className="grid grid-cols-2 gap-1 mb-4 text-[14.5px] font-semibold xs:grid-cols-3 lg:grid-cols-4 xl:flex">
+              <span className="flex items-center justify-center px-3 py-0.5 text-orange-500 bg-orange-100 rounded-full">
+                React
+              </span>
+              <span className="flex items-center justify-center px-3 py-0.5 text-orange-500 bg-orange-100 rounded-full">
+                TypeScript
+              </span>
+              <span className="flex items-center justify-center px-3 py-0.5 text-orange-500 bg-orange-100 rounded-full">
+                Tailwind CSS
+              </span>
+              <span className="flex items-center justify-center px-3 py-0.5 text-orange-500 bg-orange-100 rounded-full">
+                Python
+              </span>
+              <span className="flex items-center justify-center px-3 py-0.5 text-orange-500 bg-orange-100 rounded-full">
+                Flask
+              </span>
+              <span className="flex items-center justify-center px-3 py-0.5 text-orange-500 bg-orange-100 rounded-full">
+                PostgreSQL
+              </span>
+            </div>
+            <div className="grow shrink" />
+            <div className="flex flex-col space-y-2 xs:flex-row xs:space-x-2 xs:space-y-0">
+              <button
+                onClick={openMPBlogDetailsHandler}
+                className="relative px-6 py-2 text-white font-bold uppercase bg-gradient-to-r from-zinc-400 to-zinc-600 rounded-full outline-none transition-all duration-200 after:inline-block after:w-full after:h-full after:absolute after:inset-0 after:bg-gradient-to-r after:from-zinc-500 after:to-zinc-700 after:rounded-full after:-z-10 after:duration-500 hover:from-zinc-500 hover:to-zinc-700 hover:-translate-y-[3px] hover:shadow-2xl hover:after:scale-x-[1.3] hover:after:scale-y-[1.3] hover:after:opacity-0 focus:-translate-y-[1px] focus:animate-pulsate"
+              >
+                More Details
+              </button>
+            </div>
+          </div>
+          <div className="flex row-start-1 items-end justify-center bg-white/50 rounded-xl md:row-start-auto">
+            <img
+              src={blogImg}
+              alt="Bettershotz"
+              className="w-[90%] h-[95%] rounded-t-xl shadow-top-left-right xs:w-[70%]"
+            />
+          </div>
+          <MPBlogDetails
+            openMPBlogDetails={openMPBlogDetails}
+            openMPBlogDetailsHandler={openMPBlogDetailsHandler}
           />
         </div>
       </div>
