@@ -1,5 +1,7 @@
 import { BsLinkedin, BsTwitter, BsGithub } from 'react-icons/bs';
 
+const currentYear = new Date().getFullYear();
+
 const Footer = () => {
   return (
     <footer className="container mx-auto max-w-7xl pt-12 pb-8 px-4 text-gray-800 lg:pt-16 md:px-10 lg-pt-20">
@@ -47,7 +49,7 @@ const Footer = () => {
 
       <div className="mt-8 text-center text-sm">
         <p>
-          &copy; Copyright 2022. Made by{' '}
+          &copy; Copyright {currentYear}. Made by{' '}
           <span>
             <a
               href="http://mfonpeter.netlify.app/"

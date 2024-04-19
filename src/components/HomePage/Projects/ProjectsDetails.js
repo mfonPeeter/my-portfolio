@@ -449,8 +449,8 @@ export const MPBlogDetails = ({
             <span className="font-semibold text-lg">2024</span>
           </div>
           <p className="mb-2 text-lg font-semibold">
-            Below, you'll discover additional details about my so far process in
-            building MP. BLOG.
+            Below, you'll discover additional details about my process so far in
+            building MP. Blog.
           </p>
           <ul className="flex flex-col space-y-2 mb-4">
             <li className="flex space-x-2 max-w-3xl">
