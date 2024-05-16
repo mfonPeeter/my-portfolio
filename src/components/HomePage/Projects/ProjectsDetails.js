@@ -333,10 +333,10 @@ export const MfonAiDetails = ({
                   <span className="inline-block mb-2">
                     In the request body, the{' '}
                     <span className="font-semibold">max_tokens</span> parameter
-                    is set to <span className="font-semibold">20</span> to limit
-                    the number of tokens returned by the Claude API. This is
-                    because I'm currently using the free tier of the Claude API
-                    and want to avoid exceeding my usage limits for this
+                    is set to <span className="font-semibold">100</span> to
+                    limit the number of tokens returned by the Claude API. This
+                    is because I'm currently using the free tier of the Claude
+                    API and want to avoid exceeding my usage limits for this
                     personal project
                   </span>
                   <div className="flex justify-center w-full">
@@ -355,7 +355,7 @@ export const MfonAiDetails = ({
                 <div>
                   <span className="inline-block mb-2">
                     Setting <span className="font-semibold">max_tokens</span> to{' '}
-                    <span className="font-semibold">20</span> means that the
+                    <span className="font-semibold">100</span> means that the
                     Claude API will not return the complete answer if the token
                     limit is exceeded. In such cases, an error message stating
                     <span className="font-semibold">
