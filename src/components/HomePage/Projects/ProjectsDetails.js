@@ -512,12 +512,12 @@ export const LicaTestDetails = ({
                 </div>
                 <span>
                   If you look at the README.md in the GitHub repository, you
-                  will see two sections:{' '}
+                  would notice two sections:{' '}
                   <span className="font-semibold">The Process</span> and{' '}
                   <span className="font-semibold">Updated Process</span>. In
                   these sections, I gave a more detailed summary of the process
-                  I took when building the project. I talked about the
-                  challenges I faced and how I overcame them.
+                  I took when building the project, the challenges I faced, and
+                  how I overcame them.
                 </span>
               </li>
               <li className="flex space-x-2 max-w-3xl">
