@@ -4,6 +4,7 @@ import {
   LaonDetailsOverlay,
   BettershotzDetailsOverlay,
   MfonAiDetailsOverlay,
+  LicaTestDetailsOverlay,
   MPBlogDetailsOverlay,
 } from './ProjectsOverlay';
 import responseBodyImg from '../../../assets/response-body.webp';
@@ -413,6 +414,173 @@ export const MfonAiDetails = ({
             <ButtonSmall link="https://mfon-ai.vercel.app/" text="Live Link" />
             <ButtonSmallZinc
               link="https://github.com/mfonPeeter/mfon-ai"
+              text="GitHub Link"
+            />
+          </div>
+        </div>
+      </aside>
+    </>
+  );
+};
+
+export const LicaTestDetails = ({
+  openLicaTestDetails,
+  openLicaTestDetailsHandler,
+}) => {
+  return (
+    <>
+      <LicaTestDetailsOverlay
+        openLicaTestDetails={openLicaTestDetails}
+        openLicaTestDetailsHandler={openLicaTestDetailsHandler}
+      />
+      <aside
+        className={`absolute z-10 left-0 w-[90%] bg-white rounded-xl transiton-all duration-500 lg:w-auto ${
+          openLicaTestDetails ? 'translate-x-0' : '-translate-x-full'
+        }`}
+      >
+        <button
+          onClick={openLicaTestDetailsHandler}
+          className="absolute top-2 right-2 bg-orange-400 rounded transition-colors hover:bg-orange-300"
+        >
+          <BsX size="25" color="white" />
+        </button>
+        <div className="pb-6 px-2 mt-12 sm:px-4">
+          <div className="flex justify-between">
+            <h3 className="mb-2">Lica Test</h3>
+            <span className="font-semibold text-lg">2024</span>
+          </div>
+          <p className="mb-2 text-lg font-semibold">
+            Below, you'll discover additional details about my process in
+            building Lica Test.
+          </p>
+          <ul className="flex flex-col space-y-2 mb-4">
+            <li className="flex space-x-2 max-w-3xl">
+              <div className="mt-1">
+                <BsFillCheckCircleFill color="orange" size="15" />
+              </div>
+              <span>I made use of Next.js 14 app router for this project.</span>
+            </li>
+            <li className="flex space-x-2 max-w-3xl">
+              <div className="mt-1">
+                <BsFillCheckCircleFill color="orange" size="15" />
+              </div>
+              <span>
+                Utilized Clerk to handle authenticating with LinkedIn.
+              </span>
+            </li>
+            <li className="flex space-x-2 max-w-3xl">
+              <div className="mt-1">
+                <BsFillCheckCircleFill color="orange" size="15" />
+              </div>
+              <span>
+                Utilized LinkedIn API to enable users to make a post (with an
+                image) to their LinkedIn profile.
+              </span>
+            </li>
+            <li className="flex space-x-2 max-w-3xl">
+              <div className="mt-1">
+                <BsFillCheckCircleFill color="orange" size="15" />
+              </div>
+              <span>
+                Utilized Tailwind to ensure responsive design across various
+                screen sizes.
+              </span>
+            </li>
+            <li className="flex space-x-2 max-w-3xl">
+              <div className="mt-1">
+                <BsFillCheckCircleFill color="orange" size="15" />
+              </div>
+              <span>
+                Employed React Context for efficient state management across
+                multiple components.
+              </span>
+            </li>
+            <li className="flex space-x-2 max-w-3xl">
+              <div className="mt-1">
+                <BsFillCheckCircleFill color="orange" size="15" />
+              </div>
+              <span>Deployed the site on Vercel.</span>
+            </li>
+          </ul>
+
+          <div>
+            <h4 className="mb-2 text-xl font-semibold">Things to Note</h4>
+            <ul className="flex flex-col space-y-4 mb-4">
+              <li className="flex space-x-2 max-w-3xl">
+                <div className="mt-1">
+                  <BsFillCheckCircleFill color="orange" size="15" />
+                </div>
+                <span>
+                  If you look at the README.md in the GitHub repository, you
+                  will see two sections{' '}
+                  <span className="font-semibold">The Process</span> and{' '}
+                  <span className="font-semibold">Updated Process</span>. I gave
+                  a more detailed summary of the process I took when buiding the
+                  project. I talked about the challenges I faced and how I
+                  overcame them.
+                </span>
+              </li>
+              <li className="flex space-x-2 max-w-3xl">
+                <div className="mt-1">
+                  <BsFillCheckCircleFill color="orange" size="15" />
+                </div>
+                <div>
+                  <span>
+                    The main purpose of the take-home assignment was to work on
+                    these two features:
+                  </span>
+                  <ul className="list-disc ml-8">
+                    <li>
+                      Users should be able to log in with their LinkedIn
+                      accounts.
+                    </li>
+                    <li>
+                      Users should be able to make a post (with an image) to
+                      their LinkedIn profile.
+                    </li>
+                  </ul>
+                  <span>
+                    As a result of this, if you click on the other pages, you
+                    will be shown a{' '}
+                    <span className="font-semibold">coming soon...</span>{' '}
+                    message. Also, it is only the{' '}
+                    <span className="font-semibold">Media Upload</span> button
+                    and the <span className="font-semibold">Publish</span>{' '}
+                    button that is working on the dashboard page as those were
+                    the two main buttons needed for the features above. In the
+                    future, I may work on some other functionalities.
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div className="mb-8">
+            <h4 className="mb-2 text-xl font-semibold">Finally</h4>
+            <span className="inline-block max-w-3xl">
+              The take-home assignment was aimed to recreate parts of{' '}
+              <span>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://createful.co/"
+                  className="inline-block bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-orange-600 font-bold"
+                >
+                  Createful
+                </a>
+              </span>{' '}
+              app. This is why I made use of their logo and improved the UI of
+              their dashboard.
+            </span>
+          </div>
+
+          <div className="flex flex-col space-y-2 xs:flex-row xs:space-y-0 xs:space-x-2">
+            <ButtonSmall
+              link="http://lica-world-test.vercel.app/"
+              text="Live Link"
+            />
+            <ButtonSmallZinc
+              link="https://github.com/mfonPeeter/lica-world-test"
               text="GitHub Link"
             />
           </div>

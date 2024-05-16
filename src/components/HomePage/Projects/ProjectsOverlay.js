@@ -40,6 +40,20 @@ export const MfonAiDetailsOverlay = ({
   );
 };
 
+export const LicaTestDetailsOverlay = ({
+  openLicaTestDetails,
+  openLicaTestDetailsHandler,
+}) => {
+  return (
+    <div
+      onClick={openLicaTestDetailsHandler}
+      className={`fixed top-0 left-0 z-10 w-full h-screen bg-orange-50/50 transition-all duration-500 ${
+        openLicaTestDetails ? 'block' : 'hidden'
+      }`}
+    />
+  );
+};
+
 export const MPBlogDetailsOverlay = ({
   openMPBlogDetails,
   openMPBlogDetailsHandler,
