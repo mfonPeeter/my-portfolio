@@ -512,12 +512,12 @@ export const LicaTestDetails = ({
                 </div>
                 <span>
                   If you look at the README.md in the GitHub repository, you
-                  will see two sections{' '}
+                  will see two sections:{' '}
                   <span className="font-semibold">The Process</span> and{' '}
-                  <span className="font-semibold">Updated Process</span>. I gave
-                  a more detailed summary of the process I took when buiding the
-                  project. I talked about the challenges I faced and how I
-                  overcame them.
+                  <span className="font-semibold">Updated Process</span>. In
+                  these sections, I gave a more detailed summary of the process
+                  I took when building the project. I talked about the
+                  challenges I faced and how I overcame them.
                 </span>
               </li>
               <li className="flex space-x-2 max-w-3xl">
@@ -527,7 +527,7 @@ export const LicaTestDetails = ({
                 <div>
                   <span>
                     The main purpose of the take-home assignment was to work on
-                    these two features:
+                    two distinct features:
                   </span>
                   <ul className="list-disc ml-8">
                     <li>
@@ -543,12 +543,12 @@ export const LicaTestDetails = ({
                     As a result of this, if you click on the other pages, you
                     will be shown a{' '}
                     <span className="font-semibold">coming soon...</span>{' '}
-                    message. Also, it is only the{' '}
+                    message. It is important to note that it is only the{' '}
                     <span className="font-semibold">Media Upload</span> button
                     and the <span className="font-semibold">Publish</span>{' '}
-                    button that is working on the dashboard page as those were
-                    the two main buttons needed for the features above. In the
-                    future, I may work on some other functionalities.
+                    button that works on the dashboard page, as those were
+                    needed for the features above. In the future, I may work on
+                    some other functionalities.
                   </span>
                 </div>
               </li>

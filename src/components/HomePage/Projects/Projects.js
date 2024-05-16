@@ -205,7 +205,7 @@ const Projects = () => {
               included it in my portfolio for its impressive UI design and
               features. Using Clerk and the LinkedIn API, I built an app that
               lets authenticated users post to their LinkedIn accounts through
-              my platform
+              my platform.
             </p>
             <div className="grid grid-cols-2 gap-1 mb-4 text-[14.5px] font-semibold xs:flex">
               <span className="flex items-center justify-center px-3 py-0.5 text-orange-500 bg-orange-100 rounded-full">
